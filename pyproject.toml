@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "json-comparison"
+version = "0.1.0"
+description = "A tool to compare JSON files and generate transformation steps"
+authors = ["Suphakit Suphapinyo <Guyspk.sppy@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+isort = "^5.13.2"
+mypy = "^1.11.1"
+ruff = "^0.6.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
