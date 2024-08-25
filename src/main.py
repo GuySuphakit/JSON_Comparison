@@ -10,8 +10,6 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-
-
 def compare_jsons(
     source: Dict[str, Any],
     target: Dict[str, Any],
