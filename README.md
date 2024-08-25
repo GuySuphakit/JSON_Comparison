@@ -6,6 +6,7 @@ This Python project provides a tool to compare two JSON files and generate a lis
 
 ```
 ├── README.md
+├── requirements.txt
 ├── configs
 │   ├── answer.json         # Output JSON file with differences
 │   ├── source.json         # Source JSON file
