@@ -26,8 +26,8 @@ This Python project provides a tool to compare two JSON files and generate a lis
 1. **Clone the repository:**
 
    ```sh
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/GuySuphakit/JSON_Comparison.git
+   cd JSON_Comparison
    ```
 
 2. **Install dependencies:**
@@ -48,15 +48,36 @@ This Python project provides a tool to compare two JSON files and generate a lis
 
 To compare two JSON files and generate a list of actions to transform the source JSON into the target JSON, follow these steps:
 
-1. Place your JSON files in the `configs` directory. By default, the tool expects `source.json` and `target.json` files in this directory.
+1. Prepare Your JSON Files:
 
-2. Run the comparison:
+   - Place your JSON files in the `configs` directory.
+   - By default, the tool expects the files to be named `source.json` and `target.json`.
+
+2. Run the Comparison:
+
+   Using Poetry:
+
+   ```sh
+   poetry run python -m src.main
+   ```
+
+   This command will read `source.json` and `target.json`, perform the comparison, and write the results to `answer.json` in the `configs` directory.
+
+   Using Pip (if you prefer):
 
    ```sh
    python -m src.main
    ```
 
-   This will read `source.json` and `target.json`, compare them, and output the results to `answer.json` in the `configs` directory.
+   Ensure that you have installed the necessary dependencies listed in `requirements.txt` before running this command.
+
+3. Verify the Output:
+   - The comparison results will be saved in `configs/answer.json`.
+   - Review the `answer.json` file to see the list of actions required to transform the source JSON into the target JSON.
+
+**Note:** If you wish to use different file paths or names, update the `SOURCE_FILE`, `TARGET_FILE`, and `OUTPUT_FILE` variables in the `src/main.py` script accordingly.
+
+---
 
 ### Custom File Paths
 
